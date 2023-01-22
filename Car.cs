@@ -18,6 +18,11 @@ namespace Kolokwium.Model.DataModels
         public virtual Store Store { get; set; } = default!;
         [ForeignKey("Store")]
         public int StoreId { get; set; }
+        
+        
+        // public int yearOfBirth {get; set;}
+        [NotMapped]
+        public int Age => DateTime.Now.Year - yearOfBirth;
 
     }
 }
