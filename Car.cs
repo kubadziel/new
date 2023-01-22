@@ -21,8 +21,8 @@ namespace Kolokwium.Model.DataModels
         
         
         // public int yearOfBirth {get; set;}
-        [NotMapped]
-        public int Age => DateTime.Now.Year - yearOfBirth;
+        //[NotMapped]
+        //public int Age => DateTime.Now.Year - yearOfBirth;
 
     }
 }
